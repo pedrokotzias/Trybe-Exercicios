@@ -1,0 +1,6 @@
+ls
+morango
+laranja
+banana
+maca
+ls

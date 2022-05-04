@@ -1,0 +1,12 @@
+amarelo
+vermelho
+azul
+maroom
+preto
+laranja
+ls
+morango
+laranja
+banana
+maca
+ls

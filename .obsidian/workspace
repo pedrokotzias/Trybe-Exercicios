@@ -1,0 +1,98 @@
+{
+  "main": {
+    "id": "b86155c371dfbab9",
+    "type": "split",
+    "children": [
+      {
+        "id": "9a4bb3df6930e1f5",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "80af2a39c40b2567",
+    "type": "split",
+    "children": [
+      {
+        "id": "df3742b70d8d9516",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa61b6c9baaac5fd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "d60a446f7a6a2f16",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3ed2c6437512cf5d",
+    "type": "split",
+    "children": [
+      {
+        "id": "f740fb84ad41355b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b4669464f2a97675",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "9a4bb3df6930e1f5",
+  "lastOpenFiles": [
+    "README.md",
+    "fundamentos/bloco-02-git-github/BLOCO-02-GIT-GITHUB-INTERNET.md",
+    "fundamentos/bloco-01-unix-bash/dia-01-unix-bash-parte-01/DIA-1.1.md",
+    "fundamentos/bloco-02-git-github/dia-01-git-github-praqueserve/DIA-2.1.md",
+    "DIA 4.md",
+    "fundamentos/bloco-01-unix-bash/dia-02-unix-bash-parte-02/DIA-1.2.md",
+    "fundamentos/bloco-02-git-github/dia-02-git-github-comandos/DIA-2.2.md",
+    "fundamentos/bloco-02-git-github/dia-03-internet/DIA-2.3.md",
+    "fundamentos/bloco-01-unix-bash/BLOCO-01-UNIX-BASH.md",
+    "fundamentos/bloco-01-unix-bash/Untitled.md"
+  ]
+}
