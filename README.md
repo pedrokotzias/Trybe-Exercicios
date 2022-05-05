@@ -10,7 +10,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 1: Introdução - Unix & Shell
 
-- [ ] 1-3: _Unix & Shell- Part 1_(https://github.com/pedrokotzias/Trybe-Exercicios/blob/master/fundamentos/bloco-01-unix-bash/dia-01-unix-bash-parte-01/DIA-1.1.md)
+- [[ ] 1-3: _Unix & Shell- Part 1]_(https://github.com/pedrokotzias/Trybe-Exercicios/blob/master/fundamentos/bloco-01-unix-bash/dia-01-unix-bash-parte-01/DIA-1.1.md)
 - [ ] 1-4: _Unix & Shell- Part 2_
 
 ##### Bloco 2: Git & GitHub
