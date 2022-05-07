@@ -7,4 +7,4 @@ Os termas abordados foram:
     Trabalhar em um mesmo projeto, com mais de uma pessoa, de forma assíncrona e distribuída.
 
 
-
+Os exercicios desse dia foram para aprender praticas boas do git e github, utilizando git checkout, branch, merge, commit, push, pull
