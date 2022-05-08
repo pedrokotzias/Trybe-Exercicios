@@ -1,4 +1,4 @@
-# DIA 2.2
+# DIA 2.3
 Nesse dia o objetivo era aprender conceitos básicos da internet para começar a introdução de HTML e CSS nos proximos modulos
 
 Aprendemos:
