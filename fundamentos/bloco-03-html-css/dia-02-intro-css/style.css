@@ -1,0 +1,32 @@
+h1{
+    font-size: 65px;
+    color: orangered;
+    font-family: sans-serif;
+}
+ul{
+    font-style: italic;
+    background-color: aquamarine;
+    line-height: 22px;
+    text-align: justify;
+    text-decoration: wavy;
+}
+.lp{
+    color: darkmagenta;
+    background-color: aqua;                
+}
+body{
+    font-size: 16px;
+}
+p{
+    font-weight: 600;
+    font-size: 3em;
+}
+#red{
+    background-color: red;
+}
+#yellow{
+    background-color: yellow;
+}
+#brown{
+    background-color: brown;
+}
