@@ -8,7 +8,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Fundamentos do Desenvolvimento Web :white_check_mark:
 
-##### [Bloco 1: Unix & Bash]((https://github.com/pedrokotzias/Trybe-Exercicios/tree/master/fundamentos/bloco-01-unix-bash))
+##### [Bloco 1: Unix & Bash](https://github.com/pedrokotzias/Trybe-Exercicios/tree/master/fundamentos/bloco-01-unix-bash))
 
 - [x] 1-3: _Fundamentos do Desenvolvimento Web_
 - [x] 1-3: _Introdução - Unix & Shell_
