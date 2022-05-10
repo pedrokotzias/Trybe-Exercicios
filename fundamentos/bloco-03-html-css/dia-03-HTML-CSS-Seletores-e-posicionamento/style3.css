@@ -1,0 +1,27 @@
+div:hover {
+    border: solid black;
+}
+div:nth-child(3) {
+    color: red;
+    font-style: italic;
+    font-family: cursive;
+}
+div:nth-child(4) {
+    color: rgb(220, 28, 249);
+    font-family: fantasy;
+}
+div:nth-child(5) {
+    color:  rgb(27, 231, 250);
+    font-size: 30px;
+    font-style: italic;
+    font-family: monospace;
+}
+div:nth-child(6) {
+    color: rgb(9, 72, 99);
+    font-family: 'Times New Roman', Times, serif;
+}
+div:nth-child(7) {
+    color:rgb(191, 249, 255);
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
