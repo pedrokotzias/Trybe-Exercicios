@@ -14,6 +14,10 @@ const nota = 80;
 // 4
 const currentHour = 23;
 let message = "";
+// 5
+let weekDay = "segunda-feira";
+// 6
+let seletivo = "aprovada";
 
 //Console.log e logica
 // 1
@@ -55,3 +59,27 @@ else {
     message = "Dormindo...zzZzZZzz..."
 }
 console.log(message);
+// 5
+if(weekDay == "segunda-feira" || weekDay == "terça-feira" || weekDay == "quarta-feira" || weekDay == "quinta-feira" || weekDay == "sexta-feira") {
+    console.log("Oba, mais um dia de aprendizado na Trybe >:D");
+}
+else {
+    console.log("FINALMENTE, descanso merecido UwU");
+}
+// 6
+switch (seletivo) {
+    case "aprovada":
+        console.log("parabéns!");
+        break;
+
+    case "lista":
+        console.log("tenha esperanças!");
+        break;
+        
+    case "reprovada":
+        console.log("tente novamente!");
+        break;
+    
+    default:
+        console.log("nao se aplica.");
+}
