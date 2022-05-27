@@ -1,0 +1,11 @@
+#cientificName{
+  font-style: italic;
+}
+#cover{
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+#eyes, #fullbody{
+  height: 200px;
+}
