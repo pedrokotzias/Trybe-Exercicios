@@ -10,6 +10,7 @@ let sum = 0;
 for (let index2 = 0; index2 < numbers.length; index2 += 1) {
   sum += numbers[index2];
 }
+
 console.log(sum);
 
 // exercicio 3 e 4
@@ -25,6 +26,7 @@ if (sum3/average > 20) {
 } else {
   console.log("valor menor ou igual a 20")
 }
+
 console.log(sum3/average);
 
 // exercicio 5
@@ -35,6 +37,7 @@ for (let index5 = 1; index5 < numbers.length; index5 += 1) {
     highestNumber = numbers[index5];
   }
 }
+
 console.log(highestNumber);
 
 // exercicio 6
@@ -60,12 +63,19 @@ for (let index5 = 1; index5 < numbers.length; index5 += 1) {
     lowestNumber = numbers[index5];
   }
 }
+
 console.log(lowestNumber);
 
-// exercicio 8
+// exercicio 8 e 9
 let array = [];
+let arrayDivide = [];
 
 for (let index8 = 1; index8 < 26; index8 += 1) {
   array.push(index8);
 }
+for (let indexA = 0; indexA < array.length; indexA += 1) {
+  arrayDivide.push(array[indexA]/2)
+}
+
 console.log(array);
+console.log(arrayDivide);
