@@ -11,3 +11,13 @@ for (let index = 0; index < numbers.length; index += 1) {
   sum += numbers[index];
 }
 console.log(sum);
+
+// exercicio 3
+let sum3 = 0;
+let average = 0;
+for (let index3 = 0; index3 < numbers.length; index3 += 1) {
+  sum3 += numbers[index3];
+  average += 1;
+
+}
+console.log(sum3/average);
