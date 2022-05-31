@@ -1,6 +1,6 @@
-// exercicio 1
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
+// exercicio 1
 for (let i = 0; i < numbers.length; i += 1) {
   console.log(numbers[i]);
 }
@@ -28,11 +28,36 @@ if (sum3/average > 20) {
 console.log(sum3/average);
 
 // exercicio 5
-let compare = numbers[0];
+let highestNumber = numbers[0];
 
-for (let index = 1; index < numbers.length; index += 1) {
-  if (numbers[index] > compare) {
-    compare = numbers[index];
+for (let index5 = 1; index5 < numbers.length; index5 += 1) {
+  if (numbers[index5] > highestNumber) {
+    highestNumber = numbers[index5];
   }
 }
-console.log(compare);
+console.log(highestNumber);
+
+// exercicio 6
+let odds = [];
+
+for (let index6 = 0; index6 < numbers.length; index6 += 1) {
+  if (numbers[index6]%2 != 0) {
+    odds.push(numbers[index6]);
+  } 
+}
+
+if (odds.length === 0){
+  console.log("nenhum valor impar encontrado");
+} else {
+  console.log("existem", odds.length, "numeros impares que são:", odds);
+}
+
+// exercicio 7
+let lowestNumber = numbers[0];
+
+for (let index5 = 1; index5 < numbers.length; index5 += 1) {
+  if (numbers[index5] < lowestNumber) {
+    lowestNumber = numbers[index5];
+  }
+}
+console.log(lowestNumber);
