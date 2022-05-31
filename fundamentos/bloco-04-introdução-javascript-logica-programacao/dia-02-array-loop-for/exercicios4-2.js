@@ -61,3 +61,11 @@ for (let index5 = 1; index5 < numbers.length; index5 += 1) {
   }
 }
 console.log(lowestNumber);
+
+// exercicio 8
+let array = [];
+
+for (let index8 = 1; index8 < 26; index8 += 1) {
+  array.push(index8);
+}
+console.log(array);
