@@ -40,10 +40,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-4: _JavaScript - Objetos e Funções_
 - [x] 4-5: _[Projeto - Playground Functions](https://github.com/tryber/sd-023-a-project-playground-functions/tree/pedro-kotzias-sd-023-a-project-playground-functions)_
 
-##### Bloco 5: JavaScript: DOM, Eventos e Web Storage
+##### [Bloco 5: JavaScript: DOM, Eventos e Web Storage](https://github.com/pedrokotzias/Trybe-Exercicios/tree/main/fundamentos/bloco-5-javascript-dom-eventos-e-web-storage)
 
-- [ ] 5-1: _JavaScript - DOM e seletores_
-- [ ] 5-2: _JavaScript - Trabalhando com elementos_
+- [x] 5-1: _JavaScript - DOM e seletores_
+- [x] 5-2: _JavaScript - Trabalhando com elementos_
 - [ ] 5-3: _JavaScript - Eventos_
 - [ ] 5-4: _JavaScript - Web Storage_
 - [ ] 5-5: _Fundamentos - JavaScript - Projetos_
