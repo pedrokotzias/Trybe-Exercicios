@@ -23,6 +23,7 @@
     </section>
   </main>
   <script>
+    //Buscano Elementos
     // Exercicio 1
     const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
     console.log(elementoOndeVoceEsta);
@@ -53,6 +54,40 @@
     // Exercicio 8
     const thirdChildFromFather = document.getElementById('pai').lastElementChild.previousElementSibling;
     console.log(thirdChildFromFather);
+
+    //Criando Elementos
+    // Exercicio 1
+    let newSibling = document.createElement('section');
+    newSibling.id = 'irmaoElementoOndeVoceEsta';
+    pai.appendChild(newSibling);
+
+    // Exercicio 2
+    let newChild = document.createElement('section');
+    newChild.id = 'filhoElementoOndeVoceEsta';
+    elementoOndeVoceEsta.appendChild(newChild);
+
+    // Exercicio 3
+    let newChildChild = document.createElement('section');
+    newChildChild.id = 'filhoPrimeiroFilhoDoFilho';
+    primeiroFilhoDoFilho.appendChild(newChildChild);
+
+    // Exercicio 4
+    const acessingUncle = document.getElementById('filhoPrimeiroFilhoDoFilho').parentElement.parentElement.nextElementSibling;
+    console.log(acessingUncle);
+
+    // Removendo elementos
+    // Exercicio 1
+    const dad = document.getElementById('pai');
+
+    for (let index = pai.childNodes.length - 1; index >= 0; index -= 1) {
+      const currentChildren = pai.childNodes[index];
+      if (currentChildren.id !== 'elementoOndeVoceEsta') {
+        currentChildren.remove();
+      }
+    }
+
+    const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+    segundoEUltimoFilhoDoFilho.remove();
 
   </script>
 </body>
