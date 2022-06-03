@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratica</title>
+  <meta name="description" content="A simple HTML5 for my studies.">
+</head>
+
+<body>
+  <main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+  <script>
+    // Exercicio 1
+    const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+    console.log(elementoOndeVoceEsta);
+
+    // Exercicio 2
+    const fatherOfOndeVoceEstarColor = elementoOndeVoceEsta.parentElement;
+    fatherOfOndeVoceEstarColor.style.color = 'pink';
+
+    // Exercicio 3
+    const changeFirstChildChildColor = document.getElementById('primeiroFilhoDoFilho').innerHTML = 'pink';
+
+    // Exercicio 4
+    const firstChild = document.getElementById('pai').firstElementChild;
+    console.log(firstChild);
+
+    // Exercicio 5
+    const firstChildSibling = document.getElementById('elementoOndeVoceEsta').previousElementSibling;
+    console.log(firstChildSibling);
+
+    // Exercicio 6
+    const attention = document.getElementById('elementoOndeVoceEsta').nextSibling;
+    console.log(attention);
+
+    // Exercicio 7
+    const thirdChild = document.getElementById('elementoOndeVoceEsta').nextElementSibling;
+    console.log(thirdChild);
+
+    // Exercicio 8
+    const thirdChildFromFather = document.getElementById('pai').lastElementChild.previousElementSibling;
+    console.log(thirdChildFromFather);
+
+  </script>
+</body>
+</html>
