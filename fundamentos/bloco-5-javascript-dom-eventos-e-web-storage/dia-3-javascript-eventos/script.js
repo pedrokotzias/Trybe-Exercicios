@@ -178,3 +178,29 @@ function attribuitTaskColorDay() {
 attribuitTaskColorDay();
 
 // Exercicio Bonus
+function addingCompromisses() {
+  let inputCompromissesBox = document.querySelector('#task-input');
+  let addCompromissesButton = document.querySelector('#btn-add');
+  let compromissesList = document.querySelector('.task-list');
+
+  addCompromissesButton.addEventListener('click', function(){
+    if(inputCompromissesBox.value.length > 0) {
+      let newCompromisse = document.createElement('li');
+      newCompromisse.innerText = inputCompromissesBox.value;
+      compromissesList.appendChild(newCompromisse);
+      inputCompromissesBox.value = '';
+    } else {
+      alert('Error: Type at least one character.');
+    }
+  })
+
+  inputCompromissesBox.addEventListener('keyup', function(event){
+    if (event.key === 'Enter' && inputCompromissesBox.value.length > 0) {
+      let newCompromisse = document.createElement('li');
+      newCompromisse.innerText = inputCompromissesBox.value;
+      compromissesList.appendChild(newCompromisse);
+      inputCompromissesBox.value = '';
+    }
+  });
+};
+addingCompromisses();
