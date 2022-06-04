@@ -97,3 +97,84 @@ function hightlightFriday(fridaysArray) {
 
 let dezFridays = [4, 11, 18, 25];
 hightlightFriday(dezFridays);
+
+// Exercicio 6
+function dayMouseOver() {
+  let daysOfTheMonth = document.querySelector("#days");
+  
+  daysOfTheMonth.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeight = '600';
+  })
+};
+
+function dayMouseOut() {
+  let daysOfTheMonth = document.querySelector("#days");
+  
+  daysOfTheMonth.addEventListener('mouseout', function(event) {
+    event.target.style.fontSize = '20px';
+    event.target.style.fontWeight = '200';
+  })
+};
+
+dayMouseOver();
+dayMouseOut();
+
+// Exercicio 7
+function personalTask(task) {
+  let taskSpan = document.createElement('span');
+  let taskFather = document.querySelector('.my-tasks');
+  taskFather.appendChild(taskSpan);
+  taskSpan.innerHTML = task;  
+};
+
+personalTask('Terminar Estudos');
+
+// Exercicio 8
+function personalTaskColoring(color) {
+  let taskColoring = document.createElement('div');
+  let taskFather = document.querySelector('.my-tasks');
+  taskColoring.className = 'task';
+  taskFather.appendChild(taskColoring);
+  taskColoring.style.backgroundColor = color; 
+};
+
+personalTaskColoring('darkseagreen')
+
+//Exercicio 9
+function addSelectedTaskClass() {
+  let selectedTask = document.getElementsByClassName('task selected');
+  let tasks = document.querySelector('.task');
+
+  tasks.addEventListener('click', function(event) {
+    if(selectedTask.length === 0) {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    }    
+  });
+};
+
+addSelectedTaskClass();
+
+// Exercicio 10
+function attribuitTaskColorDay() {
+  let pickColor = document.getElementsByClassName('task selected');
+  let selectedDay = document.querySelector('#days');
+  let taskBackground = document.querySelector('.task');
+  let taskColor = taskBackground.style.backgroundColor;
+
+  selectedDay.addEventListener('click', function(event) {
+    let targetedColor = event.target.style.color;
+    if(pickColor.length > 0 && targetedColor !== taskColor) {
+      let color = pickColor[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (targetedColor === taskColor && pickColor.length !== 0) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  });
+};
+
+attribuitTaskColorDay();
+
+// Exercicio Bonus
