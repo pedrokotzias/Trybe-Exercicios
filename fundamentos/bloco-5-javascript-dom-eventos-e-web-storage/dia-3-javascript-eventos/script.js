@@ -52,3 +52,22 @@ function holidayButton(buttonName) {
 holidayButton('Feriados');
 
 // Exercicio 3
+function highlightHolidays () {
+  const holidayButton = document.querySelector('#btn-holiday');
+  const allHolidays = document.querySelectorAll('.holiday')
+  holidayButton.addEventListener('click', function() {
+    for (let index = 0; index < allHolidays.length; index += 1) {
+      if (allHolidays[index].style.backgroundColor === 'lightgreen') {
+        allHolidays[index].style.backgroundColor = 'rgb(238,238,238)';
+      } else {
+        allHolidays[index].style.backgroundColor = 'lightgreen';
+      }
+    }
+  })
+};
+
+highlightHolidays();
+
+//myWebpage.addEventListener('mouseover', function() {
+ // myWebpage.style.color = 'pink';
+//});
