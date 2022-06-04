@@ -53,8 +53,8 @@ holidayButton('Feriados');
 
 // Exercicio 3
 function highlightHolidays () {
-  const holidayButton = document.querySelector('#btn-holiday');
-  const allHolidays = document.querySelectorAll('.holiday')
+  let holidayButton = document.querySelector('#btn-holiday');
+  let allHolidays = document.querySelectorAll('.holiday')
   holidayButton.addEventListener('click', function() {
     for (let index = 0; index < allHolidays.length; index += 1) {
       if (allHolidays[index].style.backgroundColor === 'lightgreen') {
@@ -68,6 +68,32 @@ function highlightHolidays () {
 
 highlightHolidays();
 
-//myWebpage.addEventListener('mouseover', function() {
- // myWebpage.style.color = 'pink';
-//});
+// Exercicio 4
+function highlightFridays(fridayButton) {
+  let createFridayButton = document.createElement('button');
+  let buttonsContainer = document.querySelector('.buttons-container');
+  createFridayButton.id = 'btn-friday';
+  createFridayButton.innerHTML = fridayButton;
+  buttonsContainer.appendChild(createFridayButton);
+}
+
+highlightFridays('Sexta-feira');
+
+// Exercicio 5
+function hightlightFriday(fridaysArray) {
+  let fridayButton = document.querySelector('#btn-friday');
+  let allFridays = document.getElementsByClassName('friday')
+
+  fridayButton.addEventListener('click', function() {
+    for (let index = 0; index < allFridays.length; index += 1) {
+      if (allFridays[index].innerHTML !== 'SEXTOU o/') {
+        allFridays[index].innerHTML = 'SEXTOU o/';
+      } else {
+        allFridays[index].innerHTML = fridaysArray[index];
+      }
+    }
+  })
+};
+
+let dezFridays = [4, 11, 18, 25];
+hightlightFriday(dezFridays);
