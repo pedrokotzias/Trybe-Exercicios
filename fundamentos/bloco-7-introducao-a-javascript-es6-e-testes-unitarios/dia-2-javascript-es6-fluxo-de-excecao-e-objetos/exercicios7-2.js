@@ -83,3 +83,67 @@ const lesson3 = {
   professor: 'Maria Clara',
   turno: 'noite',
 };
+
+// exercicio 1
+const nightClass = (object, key, value) => {
+  object[key] = value;
+};
+
+nightClass(lesson2, 'turno', 'noite');
+console.log(lesson2);
+
+// exercicio 2
+const listingKeys = (object) => Object.keys(object);
+
+console.log(listingKeys(lesson2));
+
+
+// exercicio 3
+const objectLength = (object) => Object.keys(object).length;
+
+
+console.log(objectLength(lesson1));
+
+// exercicio 4
+const objectValues = (object) => Object.values(object);
+
+console.log(objectValues(lesson3));
+
+// exercicio 5
+const allLesson = {};
+
+Object.assign(allLesson, { lesson1, lesson2, lesson3 });
+
+console.log(allLesson);
+
+// exercicio 6
+const totalStudents = (object) => {
+  let total = 0;
+  const array = Object.keys(object);
+  for (index in array) {
+    total += object[array[index]].numeroEstudantes;
+  }
+  return total;
+}
+
+console.log(`O total de estudantes é: ${totalStudents(allLesson)}`);
+
+// exercicio 7
+const getValueByNumber = (object, number) => Object.values(object)[number];
+console.log(getValueByNumber(lesson1, 3));
+
+// exercicio 8
+const verifyPair = (object, key, value) => {
+  const array = Object.entries(object);
+  let isEqual = false;
+  for (let index in array) {
+    if (array[index][0] === key && array[index][1] === value) {
+      isEqual = true;
+    }
+    return isEqual;
+  }
+};
+
+console.log(verifyPair(lesson1, 'materia', 'Matemática'));
+
+// bonus 1
