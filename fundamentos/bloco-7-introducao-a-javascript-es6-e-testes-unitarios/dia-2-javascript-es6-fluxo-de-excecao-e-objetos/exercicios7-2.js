@@ -110,11 +110,11 @@ const objectValues = (object) => Object.values(object);
 console.log(objectValues(lesson3));
 
 // exercicio 5
-const allLesson = {};
+const allLessons = {};
 
-Object.assign(allLesson, { lesson1, lesson2, lesson3 });
+Object.assign(allLessons, { lesson1, lesson2, lesson3 });
 
-console.log(allLesson);
+console.log(allLessons);
 
 // exercicio 6
 const totalStudents = (object) => {
@@ -126,7 +126,7 @@ const totalStudents = (object) => {
   return total;
 }
 
-console.log(`O total de estudantes é: ${totalStudents(allLesson)}`);
+console.log(`O total de estudantes é: ${totalStudents(allLessons)}`);
 
 // exercicio 7
 const getValueByNumber = (object, number) => Object.values(object)[number];
@@ -147,3 +147,39 @@ const verifyPair = (object, key, value) => {
 console.log(verifyPair(lesson1, 'materia', 'Matemática'));
 
 // bonus 1
+const mathStudents = (object) => {
+  let totalMath = 0;
+  const array = Object.keys(object);
+  for (let index in array) {
+    if (object[array[index]].materia === 'Matemática') {
+      totalMath += object[array[index]].numeroEstudantes;
+    }
+  }
+  return totalMath;
+}
+
+console.log(mathStudents(allLessons));
+
+// bonus 2
+
+const professorInfo = (object, professor) => {
+  const allLessons = [];
+  let totalStudents = 0;
+  const array = Object.values(object);
+  for (index in array) {
+    if (array[index].professor === professor) {
+      allLessons.push(array[index].materia)
+      totalStudents += array[index].numeroEstudantes;
+    }
+  }
+  return { lessons: allLessons, students: totalStudents };
+}
+
+const professorReport = (allLessons, professor) => {
+  const report = {};
+  report.professor = professor;
+  Object.assign(report, professorInfo(allLessons, professor));
+  return report;
+}
+console.log(professorReport(allLessons, 'Maria Clara'));
+
