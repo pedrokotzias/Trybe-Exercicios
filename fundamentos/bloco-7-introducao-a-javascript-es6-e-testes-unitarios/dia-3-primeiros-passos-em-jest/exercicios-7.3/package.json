@@ -1,0 +1,15 @@
+{
+  "name": "exercicios-7.3",
+  "version": "1.0.0",
+  "description": "exercicios 7.3",
+  "main": "sum.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.1"
+  }
+}
