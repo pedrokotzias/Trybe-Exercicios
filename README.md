@@ -70,7 +70,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 7-3: _Primeiros passos em Jest_
 - [x] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 
-##### Bloco 8: High Order Functions do JavaScript ES6
+##### [Bloco 8: High Order Functions do JavaScript ES6](https://github.com/pedrokotzias/Trybe-Exercicios/tree/main/fundamentos/bloco-8-higher-order-functions-do-javascript-es6)
 
 - [x] 8-1: _JavaScript ES6 - Introdução a High Order Functions_
 - [x] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
