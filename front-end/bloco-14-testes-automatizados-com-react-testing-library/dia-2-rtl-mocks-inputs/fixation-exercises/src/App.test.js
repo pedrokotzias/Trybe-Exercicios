@@ -1,6 +1,7 @@
 // App.test.js
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import App from './App';
 
 afterEach(() => jest.clearAllMocks());
@@ -13,7 +14,7 @@ it('fetches a joke', async () => {
   };
 
   jest.spyOn(global, 'fetch');
-  global.fetch.mockResolvedValue({
+  global.fetch.mockResolvedValueOnce({
     json: jest.fn().mockResolvedValue(joke),
   });
 
@@ -33,13 +34,32 @@ it('fetches a new joke when button is clicked', async () => {
     status: 200,
   };
 
+  const joke2 = {
+    id: 'xXSv492wPmb',
+    joke: 'What is red and smells like blue paint? Red paint!',
+    status: 200,
+  };
+
   jest.spyOn(global, 'fetch');
   global.fetch.mockResolvedValue({
     json: jest.fn().mockResolvedValue(joke1),
   });
 
   render(<App />);
+  const newJokeButton = screen.getByRole('button', { name: 'New joke '});
 
   expect(await screen.findByText(joke1.joke)).toBeInTheDocument();
+  expect(screen.queryByText(joke2.joke)).not.toBeInTheDocument();
   expect(global.fetch).toBeCalledTimes(1);
+
+  global.fetch.mockResolvedValueOnce({
+    json: jest.fn().mockResolvedValue(joke2),
+  });
+
+  userEvent.click(newJokeButton);
+
+  expect(await screen.findByTest(joke2.joke)).toBeInTheDocument();
+  expect(screen.queryByText(joke1.joke)).not.toBeInTheDocument();
+  expect(global.fetch).toBeCalledTimes(2);
+
 });
